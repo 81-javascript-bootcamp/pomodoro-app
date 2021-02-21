@@ -8,8 +8,68 @@
     <title>Document</title>
 </head>
 <body>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand app-title" href="#">POMODORO APP</a>
+    </div>
+</nav>
 
-<h1>Hello World</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 instructions spacing">
+            <h3>Instructions</h3>
+            <ol>
+                <li>Work for 25 uninterrupted minutes</li>
+                <li>Break for 5 minutes</li>
+                <li>Every four cycles, take a 15-30 minute break, preferably outside</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 timer spacing">
+            25:00
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 action-buttons spacing">
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-danger">Start</button>
+                <button type="button" class="btn btn-warning">Pause</button>
+            </div>
+        </div>
+    </div>
+
+    <form class="row g-3" id="task-form">
+        <div class="col-auto">
+            <input type="text" class="form-control"  placeholder="Task Title">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Add Task</button>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table" id="tasks-table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Task Title</th>
+                </tr>
+                </thead>
+                <tbody id="table-tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+</div>
+
 <script src="./bundle.js"></script>
 </body>
 </html>

@@ -1,15 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/main.css';
+import PomodoroApp from './app';
 
-const person = { name: 'John' };
+let pomodoroApp = new PomodoroApp({
+  tableTbodySelector: '#table-tbody',
+  taskFormSelector: '#task-form',
+});
 
-const { name } = person;
-
-let num = 3;
-
-const str = 'Hello';
-
-const str2 = 'Hello';
-
-function a() {
-  const b = 'Hello';
-}
+pomodoroApp.init();

@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prefer-destructuring": ["error", {"object": true, "array": true}],
+    "no-var": ["error"],
+    "prettier/prettier": ["error"]
+  }
+}
